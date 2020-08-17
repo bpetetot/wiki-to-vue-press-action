@@ -2,11 +2,15 @@
 
 echo "Hello $GITHUB_REPOSITORY"
 
-cp /package.json $GITHUB_WORKSPACE
+mkdir website
+
+cp /package.json "$GITHUB_WORKSPACE/website"
+
+git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git" website
+
+cd website
 
 yarn
-
-git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git" $(pwd)
 
 echo "---------"
 ls
