@@ -6,11 +6,11 @@ mkdir website
 
 cp /package.json "$GITHUB_WORKSPACE/website"
 
-git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git"
-
 cd website
+
+git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git"
 
 yarn
 
 echo "---------"
-ls ..
+ls
