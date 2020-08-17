@@ -1,0 +1,19 @@
+{
+  "name": "wiki-to-vue-press-action",
+  "version": "0.1.0",
+  "description": "GitHub Action building a Vue Press web site from the GitHub Wiki",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0",
+    "isomorphic-git": "^1.7.4",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
+  }
+}
