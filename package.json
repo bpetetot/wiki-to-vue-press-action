@@ -1,0 +1,11 @@
+{
+  "name": "wiki-to-vue-press-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bpetetot/wiki-to-vue-press-action.git",
+  "author": "Benjamin Petetot <bpetetot@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

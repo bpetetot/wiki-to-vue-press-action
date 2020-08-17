@@ -2,12 +2,9 @@
 
 echo "Hello $GITHUB_REPOSITORY"
 
-npx create-vuepress website
+cp /package.json $GITHUB_WORKSPACE
 
-git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git"
+# git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git"
 
 echo "---------"
 ls
-echo "---------"
-ls website
-echo "---------"
