@@ -2,11 +2,7 @@
 
 echo "Hello $GITHUB_REPOSITORY"
 
-mkdir website
-
-cp /package.json "$GITHUB_WORKSPACE/website/"
-
-cd website
+cp /package.json "$GITHUB_WORKSPACE/"
 
 git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git" .
 
