@@ -4,13 +4,18 @@ echo "Hello $GITHUB_REPOSITORY"
 
 mkdir website
 
-cp /package.json "$GITHUB_WORKSPACE/website"
+cp /package.json "$GITHUB_WORKSPACE/website/"
 
 cd website
 
-git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git"
+git clone "https://github.com/$GITHUB_REPOSITORY.wiki.git" website
 
 yarn
 
 echo "---------"
 ls
+
+echo "---------"
+ls website
+
+echo "---------"
