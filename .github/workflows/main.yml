@@ -1,0 +1,9 @@
+on: gollum
+jobs:
+  wiki-to-vue-press:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Vue Press from wiki
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: bpetetot/wiki-to-vue-press-action@init-github-action
