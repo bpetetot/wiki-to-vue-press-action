@@ -1,0 +1,10 @@
+name: wiki-to-vue-press-action
+description: GitHub Action building a Vue Press web site from the GitHub Wiki
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: alert-triangle
+  color: orange
